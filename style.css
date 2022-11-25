@@ -1,0 +1,597 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Righteous&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+
+
+
+}
+
+
+body {
+  font-size: 100%;
+  background: url('https://i.ibb.co/n1Ms3yb/bg-stars.png'), #1C1D1F;
+  background-repeat: repeat;
+  font-family: 'Fredoka', sans-serif;
+}
+
+.navbar-inicio {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  gap: 2rem;
+  font-family: 'Fredoka', sans-serif;
+  font-size: 1.2rem;
+  padding-top: 1.4rem;
+  transition: top 0.3s;
+
+}
+
+.opcao {
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  cursor: pointer;
+  padding-top: 9px;
+}
+
+.opcao::after {
+  display: block;
+  content: '';
+  padding-top: 6px;
+  border-bottom: solid 2px #fff;
+  transform: scaleX(0);
+  transition: transform 150ms ease-in-out;
+}
+
+.opcao:hover::after {
+  transform: scaleX(1);
+}
+
+.imagem-logo {
+  overflow: visible;
+  cursor: pointer;
+}
+
+.navbar-inicio img {
+  width: 5rem;
+  transition: 150ms ease-in-out;
+}
+
+.navbar-inicio img:hover {
+  transform: scale(1.1);
+}
+
+
+.inicio {
+  width: 100%;
+  height: 90vh;
+  margin-top: -4.5vh;
+
+}
+
+.inicio .blocagem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 90vh;
+}
+
+.inicio .principal-caixatexto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+
+}
+
+.inicio .ola-text {
+  font-size: 15vmin;
+}
+
+.inicio .eddie-text {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 5vmin;
+  letter-spacing: 1.2vmin;
+  color: antiquewhite;
+}
+
+.inicio .legenda-text {
+  padding-top: 1rem;
+  font-size: 5vmin;
+}
+
+.inicio .principal-caixaimagem img {
+  width: 50vmin;
+  transform: translateY(-2%);
+  animation: floater 4s infinite;
+}
+
+
+@keyframes floater {
+  0% {
+    transform: translateY(-2%);
+    transition: ease 0.2s;
+  }
+
+  50% {
+    transform: translateY(7%);
+    transition: ease 0.9s;
+  }
+
+}
+
+.sobre-mim{
+  overflow: hidden;
+}
+
+.sobre-mim .fundo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  transition: all 0.2s;
+  gap: 3rem;
+}
+
+.sobre-mim .header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sobre-mim .titulo {
+  font-size: 2.2rem;
+}
+
+
+
+.sobre-mim .conteudo-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-inline: 15rem;
+
+}
+
+.sobre-mim .card {
+  margin: 1px;
+  padding: 20px;
+  width: 35rem;
+  height: 15rem;
+  min-height: 200px;
+  border: 2px solid white;
+  border-radius: 0.4rem;
+}
+
+.sobre-mim .card .conteudo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+}
+
+.sobre-mim .card .conteudo h1 {
+  font-size: 1.8rem;
+}
+
+.sobre-mim .card .conteudo span {
+  font-size: 1.1rem;
+}
+
+
+
+
+
+
+
+.habilidades {
+  width: 100%;
+  overflow: hidden;
+
+}
+
+
+.habilidades .blocagem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 15rem;
+  margin-bottom: 15rem;
+  color: white;
+  font-family: 'Fredoka', sans-serif;
+  gap: 5rem;
+}
+
+.habilidades .bloco-esquerdo img {
+  width: 30rem;
+  transform: translateY(-2%);
+  animation: floater 4s infinite;
+}
+
+.habilidades .bloco-meio {
+  height: 50%;
+  width: 2px;
+  background: #ffbb00;
+}
+
+.habilidades .bloco-direito {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.habilidades .bloco-direito .titulo-bloco {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.habilidades .bloco-direito .titulo-bloco h1 {
+  font-size: 2.2rem;
+}
+
+.habilidades .bloco-direito .titulo-bloco span {
+  color: #777;
+}
+
+.barras {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.habilidade .titulo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.6rem;
+  font-size: 1.2rem;
+}
+
+.habilidade .titulo .nome {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.02rem;
+  letter-spacing: 0.02rem;
+}
+
+.habilidade .titulo .warning {
+  color: #777;
+  font-size: 0.9rem;
+}
+
+
+.progress {
+  height: 9px;
+  background-color: #777;
+  position: relative;
+  width: 20rem;
+}
+
+.progress .progress-bar-html {
+  position: absolute;
+  height: 100%;
+  background-color: #ffbb00;
+  width: 70%;
+  animation: progress-70 1.5s normal;
+}
+
+.progress .progress-bar-js {
+  position: absolute;
+  height: 100%;
+  background-color: #ffbb00;
+  width: 10%;
+  animation: progress-10 1.5s normal;
+}
+
+.progress .progress-bar-90 {
+  position: absolute;
+  height: 100%;
+  background-color: #ffbb00;
+  width: 90%;
+  animation: progress-90 1.5s normal;
+}
+
+.progress .progress-bar-80 {
+  position: absolute;
+  height: 100%;
+  background-color: #ffbb00;
+  width: 80%;
+  animation: progress-80 1.5s normal;
+}
+
+.progress .progress-bar-70 {
+  position: absolute;
+  height: 100%;
+  background-color: #ffbb00;
+  width: 70%;
+  animation: progress-70 1.5s normal;
+}
+
+.progress .progress-bar-60 {
+  position: absolute;
+  height: 100%;
+  background-color: #ffbb00;
+  width: 60%;
+  animation: progress-60 1.5s normal;
+}
+
+.contato{
+margin-bottom: 6rem;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-inline: 20rem;
+  overflow: hidden;
+  
+}
+
+.formulario .header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 4vmin;
+  color: #ffbb00;
+}
+
+.formulario .titulo {
+font-size: 2.2rem;
+}
+
+.conteudo-form{
+  display: flex;
+  flex-direction: column;
+  gap: 3vmin;
+}
+
+.contato-input {
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  font-size: 2vmin;
+  padding: 1.5vmin;
+  background-color: #24242400;
+  color: #ffffff;
+  width: 70vmin;
+  transition: all 0.5s ease;
+}
+
+.contato-input-mensagem{
+  border: none;
+  font-family: 'Fredoka', sans-serif;
+  border-bottom: 1px solid #ffffff;
+  font-size: 2vmin;
+  padding: 1.5vmin;
+  background-color: #24242400;
+  color: #e9e9e9;
+  width: 70vmin;
+  transition: all 0.5s ease;
+  overflow-wrap: break-word;  
+  word-wrap: break-word; 
+  word-break: break-word;
+  resize: none;
+}
+
+.formulario button{
+  font-family: 'Fredoka', sans-serif;
+  border: none;
+  padding: 1vmin;
+  font-size: 3vmin;
+  background: #ffbb00;
+  border-radius: 0.5vmin;
+}
+
+.formulario button:hover{
+  cursor: pointer;
+}
+
+
+.contato-input-mensagem:focus {
+  outline: none;
+  border-bottom: 1px solid #ffbb00;
+}
+
+.contato-input:focus {
+  outline: none;
+  border-bottom: 1px solid #ffbb00;
+}
+
+.formulario .opcao-input{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2vmin;
+}
+
+
+
+
+
+.rodapé {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  border-top: 1px solid white;
+  width: 100%;
+  color: white;
+}
+
+.conteudo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.rodapé span {
+  font-size: 1.2rem;
+}
+
+
+@keyframes progress-10 {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 10%
+  }
+
+}
+
+@keyframes progress-40 {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 40%
+  }
+
+}
+
+@keyframes progress-50 {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 50%
+  }
+
+}
+
+@keyframes progress-60 {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 60%
+  }
+
+}
+
+@keyframes progress-70 {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 70%
+  }
+
+}
+
+@keyframes progress-80 {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 80%
+  }
+
+}
+
+
+
+
+
+/*-------EFEITO ESCREVENDO-------*/
+.eddie-text {
+  width: max-content;
+  position: relative;
+}
+
+.eddie-text::before,
+.eddie-text::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+}
+
+.eddie-text::before {
+  background: #0e0e0e;
+  animation: typing 1000ms steps(25) 1.25s forwards;
+}
+
+.eddie-text::after {
+  width: .2rem;
+  background: rgb(255, 255, 255);
+  animation: typing 1000ms steps(25) 1.25s forwards, bopcao 800ms infinite;
+}
+
+@keyframes typing {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes bopcao {
+  to {
+    background: transparent;
+  }
+}
+
+/*-------EFEITO ESCREVENDO-------*/
+
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #c2c2c2 #363636;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 18px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #363636;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #dbdbdb;
+  border-radius: 10px;
+  border: 4.5px solid #363636;
+}

@@ -1,0 +1,251 @@
+.habilidades{
+    width: 100%;
+  
+  }
+  
+  
+  .habilidades-mobile .blocagem{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    color: white;
+    font-family: 'Fredoka', sans-serif;
+    gap: 5rem;
+  }
+  
+  .habilidades-mobile{
+    display: none;
+    overflow: hidden;
+  }
+  
+  .habilidades-mobile .bloco-esquerdo img{
+    width: 20rem;
+      transform: translateY(-2%);
+  animation: floater 4s infinite;
+  }
+  
+  .habilidades-mobile .bloco-meio{
+    height: 50%;
+    width: 2px;
+    background: #ffbb00;
+  }
+  
+  .habilidades-mobile .bloco-direito{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .habilidades-mobile .bloco-direito .titulo-bloco{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+  }
+  
+  .habilidades-mobile .bloco-direito .titulo-bloco h1{
+    font-size: 2.2rem;
+    }
+  .habilidades-mobile .bloco-direito .titulo-bloco span{
+  color: #777;
+  }
+  
+  .barras{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.6rem;
+  }
+  
+  .habilidade .titulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0.6rem;
+    font-size: 1.2rem;
+  }
+  .habilidade .titulo .nome{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.02rem;
+    letter-spacing: 0.02rem;
+  }
+  
+  .habilidade .titulo .warning{
+    color: #777;
+    font-size: 0.9rem;
+  }
+  
+  @media (max-width: 800px)
+{
+
+  body {
+    font-size: 100%;
+    background: url('https://i.ibb.co/n1Ms3yb/bg-stars.png'), #1C1D1F;
+    background-position: top;
+    background-repeat: repeat;
+    font-family: 'Fredoka', sans-serif;
+  }
+
+  .habilidades{
+    display: none;
+  }
+
+.navbar-inicio{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 2rem;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 2.7vmin;
+    padding-top: 1.4rem;
+    transition: top 0.3s;
+
+}
+
+
+.navbar-inicio img{
+    width: 10vmin;
+    transition   : 150ms ease-in-out;
+}
+
+
+
+
+.inicio {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.inicio .blocagem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.inicio .principal-caixatexto{
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    
+}
+
+.inicio .ola-text{
+    padding-top: 8vmin;
+    font-size: 13vmin;
+}
+.inicio .eddie-text{
+    font-family: 'Source Code Pro', monospace;
+    font-size: 5vmin;
+    letter-spacing: 0.7vmin;
+    color: antiquewhite;
+}
+.inicio .legenda-text{
+    padding-top: 1vmin;
+    font-size: 5.4vmin;
+}
+.inicio .principal-caixaimagem img{
+    width: 62vmin;
+      transform: translateY(-2%);
+  animation: floater 4s infinite;
+}
+
+
+ .habilidades-mobile{
+  display: block;
+ }
+ 
+  .habilidades-mobile .blocagem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .sobre-mim .header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  
+  .sobre-mim .conteudo-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.6rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-inline: 4rem;
+  
+  }
+  
+  .sobre-mim .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    max-height:max-content;
+  
+  }
+  
+  .formulario {
+    margin-inline: 0rem;
+    
+  }
+
+
+  .contato-input {
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    font-size: 1.2rem;
+    padding: 1rem;
+    background-color: #24242400;
+    color: #ffffff;
+    width: 70vmin;
+    transition: all 0.5s ease;
+  }
+  
+  .contato-input-mensagem{
+    border: none;
+    font-family: 'Fredoka', sans-serif;
+    border-bottom: 1px solid #ffffff;
+    font-size: 1.2rem;
+    padding: 1rem;
+    background-color: #24242400;
+    color: #e9e9e9;
+    width: 70vmin;
+    transition: all 0.5s ease;
+    overflow-wrap: break-word;  
+    word-wrap: break-word; 
+    word-break: break-word;
+    resize: none;
+  }
+
+
+
+}
