@@ -22,6 +22,10 @@ body {
   font-family: 'Fredoka', sans-serif;
 }
 
+.aviso-topo{
+  display: none;
+}
+
 .navbar-inicio {
   display: flex;
   flex-direction: row;
@@ -184,8 +188,6 @@ body {
 }
 
 .sobre-mim .card .conteudo {
-  display: flex;
-  flex-direction: column;
   gap: 0.5rem;
 
 }
@@ -365,7 +367,7 @@ margin-bottom: 6rem;
   justify-content: center;
   align-items: center;
   padding-bottom: 4vmin;
-  color: #ffbb00;
+  color: #f7f5f5;
 }
 
 .formulario .titulo {
@@ -406,15 +408,24 @@ font-size: 2.2rem;
 }
 
 .formulario button{
+  -webkit-transition: background-color 1000ms linear;
+  -moz-transition: background-color 1000ms linear;
+  -o-transition: background-color 1000ms linear;
+  -ms-transition: background-color 1000ms linear;
+  transition: background-color 1000ms linear;
   font-family: 'Fredoka', sans-serif;
   border: none;
   padding: 1vmin;
   font-size: 3vmin;
-  background: #ffbb00;
+  background-color: #dbdbdb;
+  transition: 2 all ease;
   border-radius: 0.5vmin;
+
+
 }
 
 .formulario button:hover{
+  background-color: #ffbb00;
   cursor: pointer;
 }
 

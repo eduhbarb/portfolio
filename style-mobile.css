@@ -87,6 +87,15 @@
   
   @media (max-width: 800px)
 {
+  .aviso-topo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100vw; 
+    color: white; 
+    padding: 2rem;
+  }
 
   body {
     font-size: 100%;
@@ -101,7 +110,7 @@
   }
 
 .navbar-inicio{
-    display:flex;
+    display:none;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -193,7 +202,7 @@
   .sobre-mim .conteudo-cards{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
     gap: 1.6rem;
     list-style: none;
     margin: 0;
@@ -211,6 +220,15 @@
     height: fit-content;
     max-height:max-content;
   
+  }
+
+  .sobre-mim .card .conteudo h1 {
+    font-size: 1.6rem;
+  }
+  
+  .sobre-mim .card .conteudo span {
+    font-size: 0.9rem;
+    line-height: 1.23rem;
   }
   
   .formulario {
