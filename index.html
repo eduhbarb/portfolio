@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style-mobile.css">
     <script src="https://kit.fontawesome.com/ced1a7adbf.js" crossorigin="anonymous"></script>
-
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="icon" type="image/x-icon" href="img/me circle.png">
+    <link rel="icon" type="image/x-icon" href="img/crow-logo.png">
+
 </head>
 
 <body>
@@ -23,9 +23,9 @@
         <a href="#contato"><span class="opcao">CONTATO</span></a>
         <a href="#sobre-mim"><span class="opcao">SOBRE MIM</span></a>
         <div class="imagem-logo">
-            <a href="#"><img src="img/crow-logo.png" alt=""></a>
+            <a onclick="crow()"><img src="img/crow-logo.png" alt=""></a>
         </div>
-        <span class="opcao">PROJETOS</span>
+        <a href="#projetos"><span class="opcao">PROJETOS</span></a>
         <a href="#habilidades"><span class="opcao">HABILIDADES</span></a>
     </navbar>
 
@@ -34,20 +34,29 @@
             <div class="principal-caixatexto">
                 <span data-aos="fade-right" data-aos-delay="50" class="ola-text"> Olá!</span>
                 <span data-aos="fade-right" data-aos-delay="150" class="eddie-text">Eu sou o Eduardo.</span>
-                <span data-aos="fade-right" data-aos-delay="300" class="legenda-text">E seja bem vindo ao meu portfolio!</span>
+                <span data-aos="fade-right" data-aos-delay="300" class="legenda-text">E seja bem vindo ao meu
+                    portfolio!</span>
             </div>
             <div class="principal-caixaimagem">
                 <img src="img/me circle.png" alt="">
             </div>
+
+
+        </div>
+        <div class="arrow-down">
+            <img src="https://info.e-onsoftware.com/hs-fs/hubfs/arrow-down-exp.gif?width=65&name=arrow-down-exp.gif"
+                alt="">
         </div>
 
     </section>
 
-    <section  class="sobre-mim" id="sobre-mim" data-aos="fade" data-aos-duration="700" >
+    <section class="sobre-mim" id="sobre-mim" data-aos="fade" data-aos-duration="700">
         <div class="fundo">
             <div class="header">
-                <div  data-aos="fade-right" class="titulo">
+                <div data-aos="fade-right" class="titulo">
+                    <div><img src="img/crow-logo.png" alt=""></div>
                     <h1>SOBRE</h1>
+                    <div class="corvo-inverte"><img src="img/crow-logo.png" alt=""></div>
                 </div>
                 <div data-aos="fade-left" class="subtitulo">
                     <span>UM POUCO SOBRE MIM E MEU TRABALHO</span>
@@ -56,45 +65,54 @@
 
 
             <div class="conteudo-cards">
-                <div data-aos="fade-right"  data-aos-duration="700" class="card">
+                <div data-aos="fade-right" data-aos-duration="700" class="card">
                     <div class="conteudo">
-                        <div>
-                            <h1><b>Quem sou eu?</b></h1>
+                        <div class="titulo">
+                            <h1><b> Quem eu sou?</b></h1> <!-- <div><img src="img/crow-logo.png" alt=""></div> -->
                         </div>
-                        <span>Meu nome é <b>Eduardo Barbosa</b>, tenho <b>19 anos</b> e sou um <b>amante da tecnologia</b> iniciando na
-                            carreira de <b>desenvolvedor web</b>. Sou carioca e moro no Rio de Janeiro - RJ. Atualmente estou
+                        <span>Meu nome é <b>Eduardo Barbosa</b>, tenho <b>19 anos</b> e sou um <b>amante da
+                                tecnologia</b> iniciando na
+                            carreira de <b>desenvolvedor web</b>. Sou carioca e moro no Rio de Janeiro - RJ. Atualmente
+                            estou
                             procurando estudar e me profissionalizar nesta área da tecnologia.</span>
                     </div>
                 </div>
-                <div data-aos="fade-left"  data-aos-duration="700"  class="card">
+                <div data-aos="fade-left" data-aos-duration="700" class="card">
                     <div class="conteudo">
-                        <div>
-                            <h1><b>Qual meu objetivo?</b></h1>
+                        <div class="titulo">
+                            <h1><b> Qual meu objetivo?</b></h1> <!-- <div><img src="img/crow-logo.png" alt=""></div> -->
                         </div>
-                        <span>Meu objetivo com esse projeto é organizar meus projetos e minhas informações para que <b>você</b> possa conhecer um pouco de mim e do meu trabalho. Meu <b>objetivo</b> na programação é <b>evoluir como profissional</b> para fornecer o melhor produto possivel.</span>
+                        <span>Com esse portfolio o objetivo é organizar meus projetos e minhas informações para que
+                            <b>você</b> possa conhecer um pouco de mim e do meu trabalho. Meu <b>objetivo</b> na
+                            programação é <b>evoluir como profissional</b> para fornecer o melhor produto
+                            possivel.</span>
                     </div>
                 </div>
-                <div data-aos="fade-right"  data-aos-duration="700"  class="card">
+                <div data-aos="fade-right" data-aos-duration="700" class="card">
                     <div class="conteudo">
-                        <div>
-                            <h1><b>O que eu estudo?</b></h1>
+                        <div class="titulo">
+                            <h1><b> O que eu estudo?</b></h1> <!-- <div><img src="img/crow-logo.png" alt=""></div> -->
                         </div>
                         <span>Atualmente estudo tecnologias como <b> HTML5 <i class="fa-brands fa-html5"></i>, CSS3 <i
-                                    class="fa-brands fa-css3"></i>, PHP <i class="fa-brands fa-php"></i> e Javascript <i
-                                    class="fa-brands fa-js"></i>.</b> Meus estudos de desenvolvimento web são focados no
+                                    class="fa-brands fa-css3-alt"></i>, PHP <i class="fa-brands fa-php"></i> e
+                                Javascript <i class="fa-brands fa-js"></i>.</b> Meus estudos de desenvolvimento web são
+                            focados no
                             front-end, visando estudar bibliotecas como <b> Vue.js <i class="fa-brands fa-vuejs"></i> e
                                 React.js <i class="fa-brands fa-react"></i> </b>sempre focando na acessibilidade e
                             experiência do usuário, mas também na estrutura e otimização do projeto. Meus planos futuros
                             são de estudar o back-end e me tornar desenvolvedor fullstack.</span>
                     </div>
                 </div>
-                <div data-aos="fade-left"  data-aos-duration="700"  class="card">
+                <div data-aos="fade-left" data-aos-duration="700" class="card">
                     <div class="conteudo">
-                        <div>
-                            <h1><b>O que foi utilizado?</b></h1>
+                        <div class="titulo">
+                            <h1><b> O que foi utilizado?</b></h1>
+                            <!-- <div><img src="img/crow-logo.png" alt=""></div> -->
                         </div>
                         <span>Para o desenvolvimento desse portfólio, utilizei HTML5 <i class="fa-brands fa-html5"></i>
-                            e CSS3 <i class="fa-brands fa-css3"></i> na forma mais pura e crua, utilizando apenas o framework <b>AOS</b> apenas para as animações. Por ser meu portfólio, achei que seria a chance perfeita de mostrar o que posso
+                            e CSS3 <i class="fa-brands fa-css3-alt"></i> na forma mais pura e crua, utilizando apenas o
+                            framework <b>AOS</b> apenas para as animações. Por ser meu portfólio, achei que seria a
+                            chance perfeita de mostrar o que posso
                             fazer utilizando apenas meu conhecimento nessas duas tecnologias.</span>
                     </div>
                 </div>
@@ -108,7 +126,6 @@
 
             <!---            <div class="bloco-meio">
             </div>-->
-
 
             <div data-aos="fade-right" class="bloco-direito">
                 <div class="titulo-bloco">
@@ -134,7 +151,7 @@
                     <div data-aos="fade-right" class="habilidade">
                         <div class="titulo">
                             <div class="nome">
-                                <div><i class="fa-brands fa-css3"></i> <span><b>CSS 3</b></span></div>
+                                <div><i class="fa-brands fa-css3-alt"></i> <span><b>CSS 3</b></span></div>
                             </div>
                             <div class="valor">
                                 <span><b>70%</b></span>
@@ -188,7 +205,7 @@
             </div>
             <div data-aos="fade-left" class="bloco-direito">
                 <div class="titulo-bloco">
-                    <h1>SOFT SKILLS</h1>
+                    <h1>DEMAIS</h1>
                     <span>Referentes a minha pessoa</span>
                 </div>
                 <div class="barras">
@@ -260,6 +277,40 @@
 
         </div>
 
+        <div class="blocagem-botoes">
+
+            <a href="#contato">
+                ENTRE EM CONTATO
+            </a>
+
+            <a onclick="abreModalCV()">
+                CURRÍCULO
+            </a>
+
+            <div class="modal-cv" id="modal-cv">
+                <div class="conteudo">
+                    <div class="container">
+                        <h2>Deseja baixar o currículo ou visualizar online?</h2>
+                        <div class="botoes">
+                            <a href="Eduardo Barbosa da Silva - CV.pdf" download>
+                                BAIXAR
+                            </a>
+                            <a href="https://drive.google.com/file/d/1nEG_FRLI8k8gyTAS7efRWNYGlGAEI0rk/view?usp=share_link"
+                                target=”_blank”>
+                                VER ONLINE
+                            </a>
+                        </div>
+                    </div>
+                    <div class="botao-fechar">
+                        <span onclick="abreModalCV()">X</span>
+                    </div>
+                </div>
+                <div class="modal-cv-fundo">
+                </div>
+            </div>
+
+
+        </div>
     </section>
 
     <section class="habilidades-mobile" id="habilidades-mobile">
@@ -295,7 +346,7 @@
                     <div data-aos="fade-right" class="habilidade">
                         <div class="titulo">
                             <div class="nome">
-                                <div><i class="fa-brands fa-css3"></i> <span><b>CSS 3</b></span></div>
+                                <div><i class="fa-brands fa-css3-alt"></i> <span><b>CSS 3</b></span></div>
                             </div>
                             <div class="valor">
                                 <span><b>70%</b></span>
@@ -347,7 +398,7 @@
 
             <div data-aos="fade-left" class="bloco-direito">
                 <div class="titulo-bloco">
-                    <h1>SOFT SKILLS</h1>
+                    <h1>DEMAIS</h1>
                     <span>Referentes a minha pessoa</span>
                 </div>
                 <div class="barras">
@@ -417,18 +468,202 @@
                 </div>
             </div>
 
+            <div class="container-botoes">
+                <div class="blocagem-botoes">
+
+
+                    <a href="#contato">
+                        ENTRE EM CONTATO
+                    </a>
+
+                    <a onclick="abreModalCV()">
+                        CURRÍCULO
+                    </a>
+
+                    <div class="modal-cv" id="modal-cv">
+                        <div class="conteudo">
+                            <div class="container">
+                                <h2>Deseja baixar o currículo ou visualizar online?</h2>
+                                <div class="botoes">
+                                    <a href="Eduardo Barbosa da Silva - CV.pdf" download>
+                                        BAIXAR
+                                    </a>
+                                    <a href="https://drive.google.com/file/d/1nEG_FRLI8k8gyTAS7efRWNYGlGAEI0rk/view?usp=share_link"
+                                        target=”_blank”>
+                                        VER ONLINE
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="botao-fechar">
+                                <span onclick="abreModalCV()">X</span>
+                            </div>
+                        </div>
+                        <div class="modal-cv-fundo">
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
         </div>
 
+    </section>
+
+    <section class="projetos" id="projetos">
+        <div class="header">
+            <div data-aos="fade-right" class="titulo">
+                <div><img src="img/crow-logo.png" alt=""></div>
+                <h1>PROJETOS</h1>
+                <div class="corvo-inverte"><img src="img/crow-logo.png" alt=""></div>
+            </div>
+            <div data-aos="fade-left" class="subtitulo">
+                <span>REALIZADOS DESDE O INICIO DOS MEUS ESTUDOS</span>
+            </div>
+        </div>
+        <div class="blocagem">
+            <div class="box">
+                <div class="card" data-aos="fade-right">
+                    <div class="container">
+                        <div class="imagem">
+                            <video autoplay controls loop>
+                                <source src="vid/lightspeed.mkv" type="video/mp4">
+                                Seu navegador não suporta essa tag. Utilize um navegador mais atualizado.
+                            </video>
+                        </div>
+                        <div class="header">
+                            <div class="titulo">
+                                <b>LIGHTSPEED</b>
+                            </div>
+                            <div class="tecnologias">
+                                <i class="fa-brands fa-html5" alt="HTML5"></i>
+                                <i class="fa-brands fa-css3-alt"></i>
+                                <i class="fa-brands fa-js"></i>
+                                <i class="fa-brands fa-php"></i>
+                                <i class="fa-solid fa-database"></i>
+                            </div>
+                        </div>
+
+                        <div class="descricao">
+                            Site da Lightspeed, uma empresa fictícia de internet via satélite do meu TCC de 2022 no
+                            colégio CIE Miecimo da Silva, que tem como proposta ser a vitrine da empresa e fornecer
+                            opções de login, cadastro e contratação de planos. Completamente funcional.
+                        </div>
+                        <div class="botoes">
+                            <button onclick="aviso();">Repositório</button>
+                            <button onclick="aviso();">Acessar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" data-aos="fade-left">
+                    <div class="container">
+                        <div class="imagem">
+                            <video autoplay controls loop>
+                                <source src="vid/hamburgueria.mp4" type="video/mp4">
+                                Seu navegador não suporta essa tag. Utilize um navegador mais atualizado.
+                            </video>
+                        </div>
+                        <div class="header">
+                            <div class="titulo">
+                                <b>HAMBURGUERIA VOXEL</b>
+                            </div>
+                            <div class="tecnologias">
+                                <i class="fa-brands fa-html5" alt="HTML5"></i>
+                                <i class="fa-brands fa-css3-alt"></i>
+                                <i class="fa-brands fa-js"></i>
+                            </div>
+                        </div>
+
+                        <div class="descricao">
+                            Criado para a Hamburgueria fictícia Voxel no projeto Semana Pedagógica de Informática no
+                            colégio CIE Miecimo da Silva. O site apresenta animações, cardápio com filtros, áreas como:
+                            tela inicial, slides de banners, sobre nós, contato e entre outros.
+                        </div>
+                        <div class="botoes">
+                            <button onclick="aviso();">Repositório</button>
+                            <button onclick="aviso();">Acessar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" data-aos="fade-right">
+                    <div class="container">
+                        <div class="imagem">
+                            <video autoplay controls loop>
+                                <source src="vid/overwatch2.mkv" type="video/mp4">
+                                Seu navegador não suporta essa tag. Utilize um navegador mais atualizado.
+                            </video>
+                        </div>
+                        <div class="header">
+                            <div class="titulo">
+                                <b>MENU OVERWATCH 2</b>
+                            </div>
+                            <div class="tecnologias">
+                                <i class="fa-brands fa-html5" alt="HTML5"></i>
+                                <i class="fa-brands fa-css3-alt"></i>
+                            </div>
+                        </div>
+
+                        <div class="descricao">
+                            Esse é um projeto feito por pura diversão onde o intuito era fazer um site identico ao menu
+                            do jogo Overwatch 2. Uma imagem do menu original estará disponivel para comparação.
+                            <p style="visibility: hidden;">aaaaa</p>
+
+                        </div>
+                        <div class="botoes">
+                            <button onclick="aviso();">Repositório</button>
+                            <button onclick="aviso();">Acessar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" data-aos="fade-left">
+                    <div class="container">
+                        <div class="imagem">
+                            <video autoplay controls loop>
+                                <source src="vid/homemaranha.mkv" type="video/mp4">
+                                Seu navegador não suporta essa tag. Utilize um navegador mais atualizado.
+                            </video>
+                        </div>
+                        <div class="header">
+                            <div class="titulo">
+                                <b>PRIMEIRO PROJETO</b>
+                            </div>
+                            <div class="tecnologias">
+                                <i class="fa-brands fa-html5" alt="HTML5"></i>
+                                <i class="fa-brands fa-css3-alt"></i>
+                            </div>
+                        </div>
+
+                        <div class="descricao">
+                            Esse foi meu primeiro site criado. Meu primeiro contato com HTML + CSS. Havia pouca noção de
+                            organização de código e de estilização, mas ainda assim sinto muito orgulho do que criei
+                            aqui.
+                            <p style="visibility: hidden;">aaaaa</p>
+                        </div>
+                        <div class="botoes">
+                            <button onclick="aviso();">Repositório</button>
+                            <button onclick="aviso();">Acessar</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
     </section>
 
     <div class="contato" id="contato">
 
         <div class="formulario">
             <div class="header">
-                <div  data-aos="fade-right" class="titulo">
-                    <h2>CONTATO</h2>
+                <div data-aos="fade-right" class="titulo">
+                    <div><img src="img/crow-logo.png" alt=""></div>
+                    <h1>CONTATO</h1>
+                    <div class="corvo-inverte"><img src="img/crow-logo.png" alt=""></div>
                 </div>
-                <div  data-aos="fade-right" class="subtitulo">
+                <div data-aos="fade-right" class="subtitulo">
                     <span>Deseja entrar em contato comigo? é por aqui:</span>
                 </div>
             </div>
@@ -437,7 +672,7 @@
                 <div class="conteudo-form">
                     <div data-aos="fade-right" class="opcao-input">
                         <!--<b>Seu email:</b>---->
-                        <input placeholder="Nome *" class="contato-input" type="text" name="email" required>
+                        <input placeholder="Nome *" class="contato-input" type="text" name="nome" required>
                     </div>
 
                     <div data-aos="fade-right" class="opcao-input">
@@ -455,7 +690,8 @@
                     <div data-aos="fade-right" class="opcao-input input-mensagem">
                         <!---<b>Sua mensagem:</b>--->
 
-                        <textarea placeholder="Mensagem *" rows="5" cols="61" class="contato-input-mensagem" name="mensagem" required></textarea>
+                        <textarea placeholder="Mensagem *" rows="5" cols="61" class="contato-input-mensagem"
+                            name="mensagem" required></textarea>
                     </div>
 
                     <!-- your other form fields go here -->
@@ -470,14 +706,22 @@
         <div class="conteudo">
             <div class="textos">
                 <span>Desenvolvido por</span> <span style="color:#ffbb00;">Eduardo Barbosa</span>
-                
+
             </div>
             <span style="font-size: 0.92rem; color: #f5f5f5;">2022</span>
         </div>
 
     </footer>
 
+    <script>
+        function aviso() {
+            alert("Função ainda não disponível!");
+        }
+    </script>
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="jquery-3.6.1.js"></script>
+    <script src="script.js"></script>
     <script>
         AOS.init({
             duration: 900,
