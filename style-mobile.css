@@ -110,6 +110,10 @@
     z-index: 3;
   
   }
+
+  .crow-float{
+    display: block;
+}
   
   .modal-cv .conteudo{
     display: flex;
@@ -176,7 +180,7 @@
   }
 
   .aviso-topo{
-    display: flex;
+    display: none;
     flex-direction: row;
     align-items: center;
     justify-content: center;

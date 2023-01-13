@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio Eddie</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="crow-float.css">
     <link rel="stylesheet" href="style-mobile.css">
     <script src="https://kit.fontawesome.com/ced1a7adbf.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -15,9 +16,57 @@
 </head>
 
 <body>
+    <!--
     <div class="aviso-topo">
         <span>&mdash; PORTFOLIO EM CONSTRUÇÃO &mdash;</span>
     </div>
+    --->
+
+    <div onclick="abreCrowMenu();" class="crow-float" id="crow-float">
+        <img src="img/crow-logo-black.png" alt="">
+    </div>
+
+    <div class="crow-menu">
+        <div class="container">
+            <div class="perfil">
+                <div class="foto-nome">
+                    <div class="principal-caixaimagem">
+                        <img src="img/crow-logo.png" alt="">
+                    </div>
+                    <span>Eduardo Barbosa</span>
+                </div>
+                <div class="redes">
+                    <i onclick="window.open('https://www.linkedin.com/in/eduardo-barbosa16/')"
+                        class="fa-brands fa-linkedin"></i>
+                    <i onclick="window.open('https://github.com/eduhbarb')" class="fa-brands fa-github"></i>
+                    <a href="mailto:eduardobarbosa1623@gmail.com"><i class="fa-solid fa-at"></i></i></a>
+                </div>
+            </div>
+            <div class="opcoes">
+                <div class="crow-menu-button"><a href="#inicio">INÍCIO</a></div>
+                <div class="crow-menu-button"><a href="#sobre-mim">SOBRE</a></div>
+                <div class="crow-menu-button"><a href="#habilidades-mobile">HABILIDADES</a></div>
+                <div class="crow-menu-button"><a href="#projetos">PROJETOS</a></div>
+                <div class="crow-menu-button"><a href="#contato">CONTATO</a></div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("crow-float").style.bottom = "2vh";
+            } else {
+                document.getElementById("crow-float").style.bottom = "-10rem";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
+
+
 
     <navbar class="navbar-inicio">
         <a href="#contato"><span class="opcao">CONTATO</span></a>
@@ -32,10 +81,12 @@
     <section class="inicio" id="inicio">
         <div class="blocagem">
             <div class="principal-caixatexto">
-                <span data-aos="fade-right" data-aos-delay="50" class="ola-text"> Olá!</span>
-                <span data-aos="fade-right" data-aos-delay="150" class="eddie-text">Eu sou o Eduardo.</span>
-                <span data-aos="fade-right" data-aos-delay="300" class="legenda-text">E seja bem vindo ao meu
-                    portfolio!</span>
+                <span class="ola-text"> Olá!</span>
+                <span class="eddie-text">Eu sou o Eduardo.</span>
+                <span class="legenda-text">E seja bem vindo ao meu portfolio!</span>
+                <a onclick="window.open('https://www.linkedin.com/in/eduardo-barbosa16/')">
+                    <i class="fa-brands fa-linkedin" style="font-size: 2rem;"></i>Acessar LinkedIn
+                </a>
             </div>
             <div class="principal-caixaimagem">
                 <img src="img/me circle.png" alt="">
@@ -525,11 +576,13 @@
                 <div class="card" data-aos="fade-right">
                     <div class="container">
                         <div class="imagem">
-                            <img src="img/clone-linkedin.jpg" alt="" onclick="window.open('https://eduhbarb.github.io/portfolio/img/clone-linkedin.jpg')" style="cursor: pointer;">
+                            <img src="img/clone-linkedin.jpg" alt=""
+                                onclick="window.open('https://eduhbarb.github.io/portfolio/img/clone-linkedin.jpg')"
+                                style="cursor: pointer;">
                         </div>
                         <div class="header">
                             <div class="titulo">
-                                <b class="clone">CLONE</b><b>LINKEDIN</b>   
+                                <b class="clone">CLONE</b><b>LINKEDIN</b>
                             </div>
                             <div class="tecnologias">
                                 <i class="fa-brands fa-html5" alt="HTML5"></i>
@@ -538,10 +591,12 @@
                         </div>
 
                         <div class="descricao">
-                            Clone do LinkedIn feito utilizando a técnica Pixel Perfect. Projeto feito por diversão. Tenho planos futuros para torna-lo mais completo e colocar mais habilidades em prática.
+                            Clone do LinkedIn feito utilizando a técnica Pixel Perfect. Projeto feito por diversão.
+                            Tenho planos futuros para torna-lo mais completo e colocar mais habilidades em prática.
                         </div>
                         <div class="botoes">
-                            <button onclick="window.open('https://github.com/eduhbarb/clone-linkedin')">Repositório</button>
+                            <button
+                                onclick="window.open('https://github.com/eduhbarb/clone-linkedin')">Repositório</button>
                             <button onclick="window.open('https://eduhbarb.github.io/clone-linkedin/')">Acessar</button>
                         </div>
                     </div>
@@ -743,13 +798,12 @@
             alert("Este projeto ainda não disponível para acesso!");
         }
     </script>
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="jquery-3.6.1.js"></script>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init({
-            duration: 900,
+            duration: 750,
         });
     </script>
 </body>

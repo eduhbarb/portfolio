@@ -1,0 +1,119 @@
+.crow-float{
+    display: none;
+    position: fixed;
+    z-index: 10;
+    bottom: 2vh;
+    right: 2vh;
+    transition: 0.3s all ease;
+    float:left;
+}
+
+.crow-float img{
+    cursor: pointer;
+    width: 7vh;
+    background-color: #ffbb00;
+    padding: 0.5rem;
+    border-radius: 100%;
+    transition: 0.3s all ease;
+}
+
+.crow-float img:hover{
+    transform: scale(1.1);
+    
+}
+
+
+.crow-menu{
+    position: fixed;
+    display: none;
+    z-index: 9;
+    width: 100vw;
+    height: 100vh;
+    background: url('bg-stars.png'), #1C1D1F;
+    overflow: hidden;
+
+    
+}
+
+.crow-menu .container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.crow-menu .container .opcoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    gap:0.76rem;
+}
+
+
+.crow-menu .container .opcoes a{
+    font-weight: 200;
+    letter-spacing: 0.1rem;
+    color: white;
+    font-size: 2.2rem;
+    font-family: 'Fredoka', sans-serif;
+    cursor: pointer;
+    transition: 0.22s all ease;
+} 
+
+.crow-menu .container .opcoes a:hover{
+    color: #ffbb00;
+}
+
+.crow-menu .container .perfil{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+
+.crow-menu .container .perfil .foto-nome{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0.5rem;
+}
+
+.crow-menu .container .perfil .principal-caixaimagem img{
+    width: 40vw;
+    margin: 4vw;
+}
+
+.crow-menu .container .perfil span{
+    color: white;
+    font-size: 1.6rem;
+    font-family: 'Fredoka', sans-serif;
+}
+
+.crow-menu .container .perfil .redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.crow-menu .container .perfil i{
+    background: white;
+    font-size: 1.4rem;
+    padding: 0.4rem 0.5rem;
+    border-radius: 60%;
+    color: black;
+    cursor: pointer;
+    transition: 0.3 all ease;
+}
+
+.crow-menu .container .perfil i:hover{
+    background: #ffbb00;
+}
+

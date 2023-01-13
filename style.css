@@ -84,6 +84,27 @@ body {
 
 }
 
+.inicio .principal-caixatexto a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  width: 16rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 1.1rem;
+  font-family: 'Fredoka', sans-serif;
+  border-radius: 0.4rem;
+  border: 2px solid #ffbb00;
+  cursor: pointer;
+  color: black;
+  background: #ffbb00;
+  transition: all 0.2s ease;
+  letter-spacing: 0.02rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 .arrow-down img{
   width: 2.5rem;
 }
@@ -118,6 +139,7 @@ body {
 
 .inicio .legenda-text {
   padding-top: 1rem;
+  padding-bottom: 1rem;
   font-size: 5vmin;
 }
 
